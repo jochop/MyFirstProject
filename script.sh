@@ -1,14 +1,8 @@
 #!/bin/sh
 
-variable ="Hello"
-echo $variable
-
-ls
-
-#ls *.txt > final.log
+ls *.txt > cicd.log
 
 #echo $GITHUB_SHA
 
-#curl - H
 
-#curl "https://api.github.com/repos/jochop/MyFirstProject/commits/$GITHUB_SHA" | grep -F filename | awk '{print$2}' | cut -d \, -f1 > lastCommit.log
+curl --request get https://api.github.com/repos/jochop/MyFirstProject/commits/$GITHUB_SHA | grep -F filename | awk '{print$2}' | cut -d '"-f2' >> cicd.log
