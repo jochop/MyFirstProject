@@ -10,3 +10,5 @@ ls
 #echo $GITHUB_SHA
 
 #curl - H
+
+#curl "https://api.github.com/repos/jochop/MyFirstProject/commits/$GITHUB_SHA" | grep -F filename | awk '{print$2}' | cut -d \, -f1 > lastCommit.log
