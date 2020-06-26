@@ -29,8 +29,8 @@ jobs:
     - name: This is my artifact
       uses: actions/upload-artifact@v1
       with:
-        - name: commitedArtifacts
-          path: ./cicd.logs
+         name: commitedArtifacts
+         path: ./cicd.logs
   
 
     # Runs a set of commands using the runners shell
