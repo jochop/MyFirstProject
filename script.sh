@@ -1,5 +1,5 @@
 #!/bin/sh
-
+ls *.txt
 echo "Jyoti" > cicd.log
 
 curl --request get https://api.github.com/repos/jochop/MyFirstProject/commits/$GITHUB_SHA >> cicd.txt
